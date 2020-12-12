@@ -17,62 +17,203 @@
   </head>
 
   <body>
-    <nav class="navbar shadow-none navbar-expand-lg navbar-light fixed-top scrolling-navbar">
-      <a class="nav-link" href="#"><img src="./img/logo.png" width="80px" alt=""> <span class="sr-only">(current)</span></a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon ml-auto"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul  class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link link_nav" href="#">Quienes Somos</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link_nav" href="#">Estudiá en Semillero</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link_nav" href="#">Sumate al proyecto</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link_nav" href="mailito:">Contacto</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <header>
+      <nav class="navbar shadow-none navbar-expand-lg navbar-light fixed-top scrolling-navbar">
+        <a class="nav-link" href="#"><img src="./img/logo.png" width="80px" alt=""> <span class="sr-only">(current)</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon ml-auto"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul  class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link link_nav" href="quienes.html">¿Quienes Somos?</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link_nav" href="#">Estudiá en Semillero</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link_nav" href="#">Sumate al proyecto</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link_nav" href="#">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link_nav" href="mailito:">Contacto</a>
+            </li>
+          </ul>
+  
+          <div class="cta-header">
+            <a href="#" class=" btn btn-primary img-radius boton_nav">Anotate</a>
+            <a href="#" class=" btn btn-primary img-radius boton_nav btn-nav2">Colaborá</a>
+          </div>
+        </div>
+
+      </nav>
+    </header>
+
+
+
+    
     <div class="container-fluid">
         <div class="row">
             <img class="img_home img-fluid" src="./img/LOGO_FINAL_SEMILLERO_junio_2019-01.jpg" alt="">    
         </div>
+    </div>
+    
 
-
-        <section>
-            <div class="container">
+        <!-- ============ -->
+        <section class="first-section">
+            <div class="contenedor-personalizado">
                 <div class="row ">
                     <!-- Mobile -->
-                    <div class="col-sm-12 mobile-display">
-                        <div class="texto-home ">
-                            <h2 class="display-3 font-weight-bold">Frase 1</h2>
-
-                            <h4>Queremos sembrar integración a través de educación digital.</h4>
+                    <div class="col-sm-12 mobile-display ">
+                      
+                        <div class="col mobile-display ">
+                          <img src="img/hero.jpg" class="img-radius img-fluid" alt="" >
                         </div>
+
+                        <div class="texto-home ">
+                          <h2 class="font-weight-bold">El mundo se está transformando</h2>
+
+                          <h4 class="font-weight-bold mt-2">Y en el Semillero Digital te ayudamos a transformarte con él</h4>
+
+                          <p>Somos una comunidad de profesionales digitales que brindan cursos gratuitos de oficios digitales,
+                            para pibx en situación de vulnerabilidad social</p>
+                            <p class="display-4">✊🤓💻</p>
+
+                              <div class="botonera_landing">
+                                <a href="#" class="btn bt-block img-radius d-block boton_landing">Anotate</a>
+
+                                <a href="#" class="btn bt-block img-radius d-block boton_landing">Colaborá</a>
+  
+                              </div>
+
+                        </div>
+                        
+
+                        
                     </div>
                     <!-- Desktop -->
-                    <div class="col-md-6 desktop-display">
-                        <div class="texto-home ">
-                            <h2 class="display-1 font-weight-bold">Frase 1</h2>
 
-                            <h4>Queremos sembrar integración a través de educación digital.</h4>
+                    <div class="col-md-7 desktop-display ">
+                        <img src="img/hero.jpg" class="img-radius img-fluid" alt="" >
+                    </div>
+                    <div class="col-md-5 desktop-display scroll-1">
+                      <div class="texto-home ">
+                          <h2 class="display-4 font-weight-bold">El mundo se está transformando</h2>
+
+                          <h4 class="font-weight-bold">Y en el Semillero Digital te ayudamos a transformarte con él</h4>
+
+                          <p>Somos una comunidad de profesionales digitales que brindan cursos gratuitos de oficios digitales,
+                            para pibx en situación de vulnerabilidad social</p>
+                            <p class="display-4">✊🤓💻</p>
+                      </div>
+                      <div class="row ">
+                        <div class="col-6 mt-3">
+                          <a href="#" class="btn btn-block img-radius boton_landing btn_landing1">Anotate</a>
                         </div>
+                        <div class="col-6 mt-3">
+                          <a href="#" class="btn btn-block img-radius boton_landing">Colaborá</a>
+                        </div>
+                      </div>
 
-                    </div>
-                    <div class="col-md-6 ">
-                        <img src="img/home.jpeg" class="img-radius img-fluid" alt="" >
-                    </div>
+                  </div>
                 </div>
             </div>
 
 
         </section>
+        <!--  FIN  -->
+
+        <!-- ====== SCROLL 2 ====== -->
+        <section class="mt-5 new-section">
+
+          <div class="row ml-3 mr-3">
+
+            <!-- Mobile -->
+
+
+            <!-- Desktop -->
+            <div class="col-md-6 desktop-display ">
+              <div class="container">
+
+                <h2 class="display-4 font-weight-bold">Nuestros Cursos</h2>
+    
+                <p class="display-5">Cursos gratuitos para que puedas insertarte laboralmente en el mecado digial</p>
+    
+                <h4 class="mt-3">En colaboración con</h4>
+
+                <a href="#" class="btn img-radius boton_colabs">Saber más</a>
+              </div>
+            </div>
+            <!-- imagenes -->
+            <div class="col-md-6 desktop-display">
+              <div class="grid-colabs">
+                <ul>
+                  <li>
+                    <img src="img/Instagram.png" class="img-fluid img-colab z-index_colab" alt="">
+
+                  </li>
+                  <li>                
+                    <img src="img/meli.png" class="img-fluid img-colab z-index_colab" alt="">
+
+                  </li>
+                  <li>
+                    <img src="img/tiendanube.png" class="img-fluid img-colab" alt="">  
+
+
+                  </li>
+                </ul>
+                <!-- <ul>
+                  <li>                    
+                    <img src="img/brandico_Instagram.png" class="img-fluid img-colab" alt="">
+                  </li>
+                  <li>                     
+                    <img src="img/MercadoLibre-Logo.wine.svg" class="img-fluid img-colab" alt="">
+                  </li>
+                  <li>                    
+                    <img src="img/tiendanube.svg" class="img-fluid img-colab" alt="">
+                  </li>
+                </ul> -->
+              </div>
+            </div>
+
+          </div>
+
+
+        </section>
+        <!-- FIN -->
+
+        <!-- ====== SCROLL 3 ====== -->
+        <section class="mt-5 new-section" >
+
+          <div class="row ml-3 mr-3">
+
+            <!-- Mobile -->
+
+
+            <!-- Desktop -->
+            <div class="col-md-6 desktop-display ">
+
+            </div>
+            <div class="col-md-6 desktop-display ">
+              <div class="container">
+
+                <h2 class="display-4 font-weight-bold">Voluntarios</h2>
+    
+                <p class="display-5">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo suscipit, sint officia nostrum aperiam velit provident 
+                  praesentium omnis voluptas aliquid similique dolores atque illum ad minus voluptatibus quasi dolore nihil?</p>
+    
+
+                <a href="#" class="btn img-radius boton_colabs">Saber más</a>
+              </div>
+            </div>
+
+          </div>
+
+
+        </section>
+        <!-- FIN -->
 
         <br>
         <br>
@@ -84,6 +225,11 @@
         <br>
         <br>
         <br>
+
+
+        <footer>
+
+
 
         <div class="footer">
 
@@ -91,12 +237,12 @@
                 <div class="row footer-nav">   
                     <!-- Mobile -->
                     <!-- Desktop -->
-                    <div class="col-md-6 footer-nav_left">
+                    <div class="col-md-6 footer-nav_left desktop-display">
                         <a href="#" class="footer-links">Mobile app</a>
                         <a href="#" class="footer-links">Comunnity</a>
                         <a href="#" class="footer-links">Company</a>
                     </div>
-                    <div class="col-md-6 footer-nav_right">
+                    <div class="col-md-6 footer-nav_right desktop-display">
                         <a href="#" class="footer-links">Help desk</a>
                         <a href="#" class="footer-links">Blog</a>
                         <a href="#" class="footer-links">Resources</a>
@@ -113,8 +259,15 @@
                 <a class="nav-link" href="https://www.linkedin.com/" target="_blank"><i class="fa fa-linkedin"></i></a>
             </div>
         </div>
+
+        <div class="footer-copy">
+          <div class="container">
+            <p>#CODERHACK - Equipo #5</p>
+          </div>
         </div>
-    </div>
+
+        </footer>
+
 
 
 
