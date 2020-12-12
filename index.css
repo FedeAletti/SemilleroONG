@@ -1,18 +1,21 @@
 /* ========== Variables ========== */
 :root{
+    --colorPrimarioVerde: #BDD362;
+    --colorPrimarioAzul: #54C0E7;
+    --colorPrimarioNaranja: #F49819;
     --colorLinks: #18A0FB;
     --colorBoton1: #C4C4C4;
     --colorBoton2: #F49819;
 }
 
 /* ========== GLOBAL ========== */
-
-
-/* ========== UTILIDADES ========== */
 /* TITULOS Y TEXTOS */
 h2{
     font-size: 3rem;
 }
+
+/* ========== UTILIDADES ========== */
+
 
 
 /* redondeo de imganes */
@@ -86,7 +89,7 @@ h2{
 }
 .cta-header .boton_nav{
     text-transform: capitalize;
-
+    background-color: var(--colorPrimarioAzul) !important;
 }
     /* .cta-header .btn-nav1{
         color: white!important;
@@ -181,8 +184,8 @@ h2{
 }
 .boton_landing{
     background-color: white;
-    color: var(--colorBoton2);
-    border: 1px solid var(--colorBoton2);
+    color: var(--colorPrimarioAzul);
+    border: 1px solid var(--colorPrimarioAzul);
     border-radius: 2rem;
     font-weight: bold;
     transition: .3s ease-in-out;
@@ -190,13 +193,13 @@ h2{
     font-size: 1.2rem;
 }
 .boton_landing:hover{
-    background-color: #ece8e8;
-    color: var(--colorBoton2);
+    background-color: #f6f6f6;
+    color: var(--colorPrimarioAzul);
     transform: scale(1.1);
 }
 
 .btn_landing1{
-    background-color: var(--colorBoton2);
+    background-color: var(--colorPrimarioAzul);
     color: white;
 }
 
@@ -218,7 +221,7 @@ h2{
 }
 
 
-/* SCROLL 2 */
+/* SCROLL 2 - COLABORACIONES | CURSOS*/
 
 .boton_colabs{
     background-color: white;
@@ -228,10 +231,12 @@ h2{
     font-weight: bold;
     transition: .3s ease-in-out;
     margin-top: 1.5rem;
+    text-transform: lowercase;
+    font-size: 1.2rem;
 }
 .boton_colabs:hover{
-    background-color: #ece8e8;
-    color: var(--colorBoton2);
+    background-color: var(--colorBoton2);
+    color:  #ece8e8;
     transform: scale(1.1);
 }
 
@@ -256,4 +261,107 @@ h2{
 .grid-colabs li:nth-child(3){
     grid-column: 4 / 3;
     grid-row: 8 / 2;
+}
+
+.nuestros-cursos{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    justify-content: center;
+}
+.img-nuestros-cursos{
+    position: relative;
+}
+.nuestros-cursos img{
+    /* margin: -8rem -1rem -8rem 1rem; */
+    position: absolute;
+    top: -13rem;
+    right: -13rem;
+}
+.nuestros-cursos-col{
+    padding: 0 7rem;
+}
+
+.btn-colabs{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+/* ====== VOLUNTARIOS ====== */
+
+.grid-voluntarios ul{    
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-voluntarios li:nth-child(1){
+    grid-column: 3 / 4;
+    grid-row: 3 / 3;
+}
+.grid-voluntarios li:nth-child(2){
+    grid-column: 4 / 4;
+    grid-row: 2 / 5;
+}
+.grid-voluntarios li:nth-child(3){
+    grid-column: 1 / 4;
+    grid-row: 1 / 3;
+}
+
+.btn-voluntarios{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+/* TESTIMONIOS */
+.header-testimonios{
+    display: flex;
+    flex-direction: column;
+}
+@media (min-width: 729px) {
+    .header-testimonios p{
+        max-width: 30%;
+    }
+}
+
+.footer-testimonios{
+    text-align: center;
+    max-width: 70%;
+    margin: 0 auto;
+    font-size: 1.5rem;
+}
+
+/* NEWSLETTER */
+
+.newsletter{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 0 auto;
+}
+.newsletter form input:not([type="submit"]), placeholder{
+    background-color: #7FDFF8 ;
+    color: white;
+    padding: 1rem;
+    display: inline-block;
+    width: 65%;
+    border: none;
+    border-radius: 1rem;
+}
+.newsletter input[type="submit"]{
+    text-transform: capitalize;
+    background-color: white;
+    border: 1px solid #7FDFF8;
+    color: var(--colorPrimarioAzul);
+    padding: 1rem;
+    display: inline-block;
+    border-radius: 1rem 2rem 2rem 1rem;
+    transition: 0.3s ease-in-out;
+}
+@media (min-width: 729px) {
+    .newsletter input[type="submit"]:hover {
+        background-color: #7FDFF8;
+        color: white;
+    }
+    
 }
